@@ -7,7 +7,7 @@
 /* Navbar Layout */
 .navbar{
     height: 3rem;
-    background-color: rgb(243, 198, 243);
+    background-color: rgb(228, 198, 243);
     display: flex;
     justify-content: space-between;
     align-items: center;
