@@ -7,7 +7,7 @@
 /* Navbar Layout */
 .navbar{
     height: 3rem;
-    background-color: rgb(228, 198, 243);
+    background-color: #D9D4F5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,9 +40,9 @@
 }
 
 .nav-links a:hover{
-    color: blue;
+    color: rgb(154, 89, 154);
     font-weight: 800;
-    transition: color 0.3s;
+    transition: color ease-in-out 0.3s;
 }
 
 .nav-actions{
@@ -89,4 +89,34 @@
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.hero {
+  background-color: #F3E8FF; /* pastel background */
+  color: #2D2D2D;
+  padding: 12rem 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #FFC8DD;
+  color: #2D2D2D;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #FFD6A5;
 }
