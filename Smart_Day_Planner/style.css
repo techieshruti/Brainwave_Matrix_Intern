@@ -94,7 +94,7 @@
 /* Hero Section Base */
 .hero {
   background-color: #F3E8FF; /* pastel lavender */
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
 }
 
 /* Grid Layout */
@@ -103,7 +103,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
+  gap: 8rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -140,6 +140,42 @@
 .cta-button:hover {
   background-color: #FFD6A5;
 }
+
+.benefits-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.benefits-list li {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #444;
+}
+
+.benefits-list i {
+  color: #CDEAC0;
+  font-size: 1.1rem;
+}
+
+/* Extra Button Styles */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-button.secondary {
+  background-color: #B5EAEA;
+}
+
+.cta-button.secondary:hover {
+  background-color: #A0CED9;
+}
+
 
 /* Right Quote Box */
 .hero-right {
