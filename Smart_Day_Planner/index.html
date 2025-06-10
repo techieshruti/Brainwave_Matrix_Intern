@@ -22,6 +22,8 @@
             <li><a href="#planner">Planner</a></li>
             <li><a href="#journal">Journal</a></li>
             <li><a href="#habits">Habits</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#profile">Profile</a></li>
           </ul>
         </div>
         <div class="nav-actions">
@@ -31,13 +33,41 @@
             ></i>
             <i class="fa-solid fa-door-open hover-icon"></i>
           </span>
-          <i class="fa-solid fa-toggle-off"></i>
+
+          <span class="toggle">
+            <i id="toggle-icon" class="fa-solid fa-toggle-off"></i>
+            <i class="fa-solid fa-toggle-on"></i>
+          </span>
         </div>
         <!-- Hamburger for mobile -->
         <div class="hamburger" aria-label="Toggle Menu">&#9776;</div>
       </nav>
     </header>
 
-    <script src="app.js"></script>
+<section class="hero">
+  <div class="hero-grid">
+    
+    <!-- LEFT: Welcome Content -->
+    <div class="hero-left">
+      <h1>Welcome to BlissBoard</h1>
+      <p>Your smart planner to track goals, habits, and daily progress mindfully.</p>
+      <a href="#start" class="cta-button">Get Started</a>
+    </div>
+
+    <!-- RIGHT: Quotes -->
+    <div class="hero-right">
+      <div class="quote-box">
+        <p id="quote-text">Fetching your daily affirmation...</p>
+        <button id="get-quote">Refresh ✨</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<script src="app.js"></script>
+
   </body>
 </html>
