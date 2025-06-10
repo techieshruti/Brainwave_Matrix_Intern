@@ -93,9 +93,60 @@
 
 /* Hero Section Base */
 .hero {
-  background-color: #F3E8FF; /* pastel lavender */
+  background: linear-gradient(135deg, #F3E8FF, #E0F7FA);
   padding: 5rem 2rem;
+  position: relative;
+  overflow: hidden;
 }
+
+.hero-blob {
+  position: absolute;
+  top: -100px;
+  right: -110px;
+  width: 450px;
+  z-index: 0;
+  opacity: 0.8;
+}
+.hero-grid {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes floatBlob {
+  0% {
+    transform: translate(300px, 300px) scale(1);
+  }
+  50% {
+    transform: translate(310px, 295px) scale(1.4);
+  }
+  100% {
+    transform: translate(300px, 300px) scale(1);
+  }
+}
+
+/* LEFT Blob Styling */
+.hero-blob.left {
+  position: absolute;
+  top: 220px;
+  left: -120px;
+  width: 380px;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+/* Animation for Left Blob */
+@keyframes floatBlobLeft {
+  0% {
+    transform: translate(300px, 300px) scale(1);
+  }
+  50% {
+    transform: translate(290px, 310px) scale(1.2);
+  }
+  100% {
+    transform: translate(300px, 300px) scale(1);
+  }
+}
+
 
 /* Grid Layout */
 .hero-grid {
