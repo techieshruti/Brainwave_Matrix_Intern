@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlissBoard - Planner</title>
+  <link rel="stylesheet" href="style.css"> <!-- or planner.css -->
+</head>
+<body>
+
+  <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>BlissBoard</h1>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#planner">Planner</a></li>
+            <li><a href="#journal">Journal</a></li>
+            <li><a href="#habits">Habits</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#profile">Profile</a></li>
+          </ul>
+        </div>
+        <div class="nav-actions">
+          <span class="login-icon">
+            <i
+              class="fa-duotone fa-solid fa-arrow-right-to-bracket default-icon"
+            ></i>
+            <i class="fa-solid fa-door-open hover-icon"></i>
+          </span>
+
+          <span class="toggle">
+            <i id="toggle-icon" class="fa-solid fa-toggle-off"></i>
+            <i class="fa-solid fa-toggle-on"></i>
+          </span>
+        </div>
+        <!-- Hamburger for mobile -->
+        <div class="hamburger" aria-label="Toggle Menu">&#9776;</div>
+      </nav>
+    </header>
+  <!-- 🧾 Main Planner Area -->
+  <main class="planner-page">
+    <h1>🗓️ Your Daily Planner</h1>
+    
+    <!-- Date Display -->
+    <div class="planner-date" id="date-display"></div>
+
+    <!-- To-Do List -->
+    <div class="todo-section">
+      <input type="text" id="task-input" placeholder="Add a new task...">
+      <button id="add-task">Add</button>
+      <ul id="task-list"></ul>
+    </div>
+  </main>
+
+  <script src="planner.js"></script>
+</body>
+</html>

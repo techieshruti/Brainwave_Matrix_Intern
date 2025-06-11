@@ -17,4 +17,3 @@ async function fetchQuote() {
 getQuoteBtn.addEventListener("click", fetchQuote);
 window.addEventListener("DOMContentLoaded", fetchQuote);
 
-

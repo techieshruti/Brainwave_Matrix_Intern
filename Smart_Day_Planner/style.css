@@ -362,8 +362,7 @@ body {
 .planner-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -379,7 +378,7 @@ body {
 }
 
 .planner-text h2 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   margin-bottom: 1.5rem;
   color: #2b463c;
 }
@@ -424,4 +423,80 @@ body {
   .planner-text {
     margin-top: 2rem;
   }
+}
+
+/* Main Planner Section */
+.planner-page {
+  padding: 3rem 2rem;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.planner-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.planner-date {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #6c7a6e;
+}
+
+/* To-do Input */
+#task-input {
+  width: 70%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #86ba90;
+  border-radius: 10px;
+  outline: none;
+}
+
+#add-task {
+  padding: 0.75rem 1.2rem;
+  margin-left: 0.5rem;
+  background-color: #86ba90;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#add-task:hover {
+  background-color: #6ca67a;
+}
+
+/* Task List */
+#task-list {
+  margin-top: 2rem;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+#task-list li {
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+#task-list li.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.task-btn {
+  background: transparent;
+  border: none;
+  color: #ff6b6b;
+  font-size: 1rem;
+  cursor: pointer;
 }
