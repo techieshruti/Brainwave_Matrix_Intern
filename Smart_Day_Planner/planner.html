@@ -41,18 +41,56 @@
       </nav>
     </header>
   <!-- 🧾 Main Planner Area -->
-  <main class="planner-page">
-    <h1>🗓️ Your Daily Planner</h1>
-    
-    <!-- Date Display -->
-    <div class="planner-date" id="date-display"></div>
+   <main class="planner-wrapper">
+    <h1 class="planner-heading">🌿 BlissBoard Planner</h1>
+    <div id="date-display" class="planner-date"></div>
+  <!-- Category Cards -->
+    <section class="category-cards">
 
-    <!-- To-Do List -->
-    <div class="todo-section">
-      <input type="text" id="task-input" placeholder="Add a new task...">
-      <button id="add-task">Add</button>
-      <ul id="task-list"></ul>
-    </div>
+      <!-- Health -->
+      <div class="card health">
+        <h2>💪 Health</h2>
+        <label><input type="checkbox" class="task" data-category="health"> Eat Clean</label>
+        <label><input type="checkbox" class="task" data-category="health"> Drink Water</label>
+        <label><input type="checkbox" class="task" data-category="health"> Take Medication</label>
+        <div class="custom-task">
+  <input type="text" placeholder="Add custom task..." class="custom-input">
+  <button class="add-custom" data-category="health">+</button>
+</div>
+      </div>
+
+      <!-- Mental Health -->
+      <div class="card mental">
+        <h2>🧘 Mental Health</h2>
+        <label><input type="checkbox" class="task" data-category="mental"> Meditation</label>
+        <label><input type="checkbox" class="task" data-category="mental"> Reading</label>
+        <label><input type="checkbox" class="task" data-category="mental"> Yoga</label>
+        <div class="custom-task">
+  <input type="text" placeholder="Add custom task..." class="custom-input">
+  <button class="add-custom" data-category="health">+</button>
+</div>
+      </div>
+
+      <!-- Productivity -->
+      <div class="card productivity">
+        <h2>🚀 Productivity</h2>
+        <label><input type="checkbox" class="task" data-category="productivity"> Study</label>
+        <label><input type="checkbox" class="task" data-category="productivity"> Work</label>
+        <label><input type="checkbox" class="task" data-category="productivity"> Learning</label>
+        <div class="custom-task">
+  <input type="text" placeholder="Add custom task..." class="custom-input">
+  <button class="add-custom" data-category="health">+</button>
+</div>
+      </div>
+
+    </section>
+
+    <!-- Progress Calendar Placeholder -->
+    <section id="calendar-section">
+      <h2>📅 Progress Calendar</h2>
+      <div id="calendar"></div>
+    </section>
+
   </main>
 
   <script src="planner.js"></script>
