@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BlissBoard - Planner</title>
+  <title>BlissBoard - Journal</title>
   <link rel="stylesheet" href="style.css"> 
-  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 </head>
 <body>
 
@@ -20,8 +22,6 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="planner.html">Planner</a></li>
             <li><a href="journal.html">Journal</a></li>
-            <li><a href="#habits">Habits</a></li>
-            <li><a href="#goals">Goals</a></li>
             <li><a href="#profile">Profile</a></li>
           </ul>
         </div>
@@ -42,12 +42,10 @@
         <div class="hamburger" aria-label="Toggle Menu">&#9776;</div>
       </nav>
     </header>
-  <!-- 🧾 Main Planner Area -->
-   <main class="planner-wrapper">
-    <h1 class="planner-heading">🌿 BlissBoard Planner</h1>
-    <div id="date-display" class="planner-date"></div>
-  <!-- Category Cards -->
-<section id="journal-section" class="hidden">
+
+    <section id="journal-section">
+        <p id="journal-date"></p>
+
   <h2>Dear Diary...</h2>
   <p id="journal-date"></p>
   
@@ -66,9 +64,8 @@
   <p id="save-feedback" class="hidden">✔️ Entry Saved!</p>
 </section>
 
+   
+<script src="journal.js"></script>
 
-  </main>
-
-  <script src="journal.js"></script>
-</body>
-</html>
+    </body>
+    </html>

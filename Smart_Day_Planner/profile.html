@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlissBoard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>BlissBoard</h1>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="journal.html">Journal</a></li>
+           <li><a href="profile">Profile</a></li>
+          </ul>
+        </div>
+        <div class="nav-actions">
+          <span class="login-icon">
+            <i
+              class="fa-duotone fa-solid fa-arrow-right-to-bracket default-icon"
+            ></i>
+            <i class="fa-solid fa-door-open hover-icon"></i>
+          </span>
+
+          <span class="toggle">
+            <i id="toggle-icon" class="fa-solid fa-toggle-off"></i>
+            <i class="fa-solid fa-toggle-on"></i>
+          </span>
+        </div>
+        <!-- Hamburger for mobile -->
+        <div class="hamburger" aria-label="Toggle Menu">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- Profile Section -->
+<section id="profile-section" style="display: none;">
+  <div class="profile-container">
+    
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <img src="https://i.imgur.com/your-avatar.png" alt="User Avatar" class="profile-avatar" />
+      <h2 class="profile-name">Welcome, Shruti!</h2>
+      <button class="edit-profile-btn">✏️ Edit Profile</button>
+    </div>
+
+    <!-- User Stats Overview -->
+    <div class="profile-stats">
+      <div class="stat-card">
+        <h3>📅 Tasks Completed</h3>
+        <p>120</p>
+      </div>
+      <div class="stat-card">
+        <h3>📝 Journals Written</h3>
+        <p>45</p>
+      </div>
+      <div class="stat-card">
+        <h3>🔥 Habit Streak</h3>
+        <p>8 Days</p>
+      </div>
+      <div class="stat-card">
+        <h3>🎯 Goals Achieved</h3>
+        <p>12</p>
+      </div>
+    </div>
+
+    <!-- Optional Settings Panel (Future Enhancement) -->
+    <!-- <div class="profile-settings"> ... </div> -->
+
+  </div>
+</section>
+
+
+</body>
+</html>
