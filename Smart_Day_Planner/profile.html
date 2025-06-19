@@ -42,14 +42,32 @@
       </nav>
     </header>
 
+    <!-- Login Page -->
+ <section id="auth-section">
+    <div class="auth-box">
+      <h2 id="auth-heading">Login to BlissBoard 🌿</h2>
+      
+      <form id="auth-form">
+        <input type="text" id="auth-username" placeholder="Enter your name" required />
+        <input type="password" id="auth-password" placeholder="Enter password" required />
+        <button type="submit" id="auth-submit">Login</button>
+      </form>
+
+      <p id="toggle-auth">
+        Don't have an account?
+        <a href="#" id="toggle-link">Sign Up</a>
+      </p>
+    </div>
+  </section>
+
   <!-- Profile Section -->
 <section id="profile-section">
   <div class="profile-container">
     
     <!-- Profile Header -->
     <div class="profile-header">
-      <img src="https://i.imgur.com/your-avatar.png" alt="User Avatar" class="profile-avatar" />
-      <h2 class="profile-name">Welcome, <span id="user-name"></span></h2>
+      <img src="/asssets/avtar.jpg" alt="User Avatar" class="profile-avatar" />
+      <h2 class="profile-name">Welcome, <span id="user-name">Shruti</span></h2>
       <button class="edit-profile-btn">✏️ Edit Profile</button>
     </div>
 

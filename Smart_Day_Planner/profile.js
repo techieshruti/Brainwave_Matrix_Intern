@@ -1,4 +1,3 @@
-// Put this inside <body> or your JS file
  const editBtn = document.querySelector('.edit-profile-btn');
   const userNameSpan = document.getElementById('user-name');
 
@@ -9,3 +8,6 @@
       userNameSpan.textContent = newName.trim();
     }
   });
+
+  //login page 
+  
