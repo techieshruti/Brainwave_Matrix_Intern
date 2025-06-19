@@ -757,28 +757,29 @@ li:hover .task-btn {
 }
 
 
-#login-section {
+#auth-section {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, #a0e7e5, #b4f8c8);
+  background: linear-gradient(to bottom right, #bcecc0, #f3f6f4);
 }
 
-.login-box {
+.auth-box {
   background: white;
   padding: 2rem 3rem;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   text-align: center;
+  width: 300px;
 }
 
-.login-box h2 {
+.auth-box h2 {
   margin-bottom: 1.5rem;
   color: #264653;
 }
 
-#login-form input {
+#auth-form input {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
@@ -787,7 +788,7 @@ li:hover .task-btn {
   border: 1px solid #ccc;
 }
 
-#login-form button {
+#auth-form button {
   background: #2a9d8f;
   color: white;
   padding: 0.7rem 1.5rem;
@@ -797,6 +798,17 @@ li:hover .task-btn {
   font-weight: bold;
 }
 
-#login-form button:hover {
+#auth-form button:hover {
   background: #21867a;
+}
+
+#toggle-auth {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+#toggle-auth a {
+  color: #2a9d8f;
+  font-weight: bold;
+  text-decoration: none;
 }
