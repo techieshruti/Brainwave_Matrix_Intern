@@ -756,49 +756,69 @@ li:hover .task-btn {
   font-weight: bold;
 }
 
+.user-greeting {
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: #264653;
+  font-weight: 500;
+}
 
-#auth-section {
-  min-height: 100vh;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #a0e7e5, #b4f8c8);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, #bcecc0, #f3f6f4);
+}
+
+#auth-section {
+  width: 100%;
+  max-width: 400px;
 }
 
 .auth-box {
-  background: white;
-  padding: 2rem 3rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   text-align: center;
-  width: 300px;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.auth-box.signup-mode {
+  border: 2px solid #2a9d8f;
+  box-shadow: 0 0 15px #2a9d8f55;
 }
 
 .auth-box h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: #264653;
 }
 
-#auth-form input {
-  display: block;
+.auth-box input {
   width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.7rem;
-  border-radius: 10px;
+  padding: 0.8rem;
+  margin: 0.6rem 0;
   border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
-#auth-form button {
+.auth-box button {
+  width: 100%;
   background: #2a9d8f;
-  color: white;
-  padding: 0.7rem 1.5rem;
+  color: #fff;
   border: none;
+  padding: 0.9rem;
+  font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
-  font-weight: bold;
+  margin-top: 1rem;
 }
 
-#auth-form button:hover {
+.auth-box button:hover {
   background: #21867a;
 }
 
@@ -807,8 +827,9 @@ li:hover .task-btn {
   font-size: 0.9rem;
 }
 
-#toggle-auth a {
+#toggle-link {
   color: #2a9d8f;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
+  cursor: pointer;
 }

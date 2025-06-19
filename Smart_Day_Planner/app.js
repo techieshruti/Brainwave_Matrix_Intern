@@ -17,3 +17,9 @@ async function fetchQuote() {
 getQuoteBtn.addEventListener("click", fetchQuote);
 window.addEventListener("DOMContentLoaded", fetchQuote);
 
+const userDisplay = document.getElementById("username-display");
+const userName = localStorage.getItem("blissboardUserName");
+
+if (userDisplay && userName) {
+  userDisplay.textContent = `👋 Welcome, ${userName}`;
+}

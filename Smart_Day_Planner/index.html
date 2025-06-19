@@ -32,16 +32,18 @@
             <i class="fa-solid fa-door-open hover-icon"></i>
           </span>
 
-          <span class="toggle">
-            <i id="toggle-icon" class="fa-solid fa-toggle-off"></i>
-            <i class="fa-solid fa-toggle-on"></i>
-          </span>
+          <div class="user-greeting">
+  <span id="username-display"></span>
+</div>
+
         </div>
         <!-- Hamburger for mobile -->
         <div class="hamburger" aria-label="Toggle Menu">&#9776;</div>
       </nav>
     </header>
 
+ 
+    <div id="main-content" style="display: none;"></div>
 <section class="hero" id="hero">
   <!-- 🎨 Blob Shape Starts Here -->
   <svg class="hero-blob" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -115,13 +117,12 @@
 
   </div>
 </section>
-
+</div>
 <!--planner-->
 <section class="planner-section" id="planner">
   <div class="planner-content">
     
     <div class="planner-image">
-      <!-- Replace with actual planner image or animated preview later -->
       <img src="asssets/planner-mockup.jpg" alt="Planner Preview">
     </div>
 
@@ -141,6 +142,8 @@
 
 
 <script src="app.js"></script>
+<script src="auth.js"></script>
+
 
   </body>
 </html>
