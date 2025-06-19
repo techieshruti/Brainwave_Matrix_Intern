@@ -76,16 +76,6 @@ BlissBoard/
 
 ---
 
-## 📌 To-Do / Improvements
-
-- [ ] Add persistent task saving with localStorage
-- [ ] Add custom avatars in profile section
-- [ ] Add animation to login/signup transitions
-- [ ] Add dark mode toggle
-- [ ] Add cloud sync or backend (optional future upgrade)
-
----
-
 ## 🧑‍💻 Run Locally
 
 1. Clone the repo:
