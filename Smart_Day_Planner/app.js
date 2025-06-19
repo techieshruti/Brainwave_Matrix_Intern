@@ -17,9 +17,13 @@ async function fetchQuote() {
 getQuoteBtn.addEventListener("click", fetchQuote);
 window.addEventListener("DOMContentLoaded", fetchQuote);
 
-const userDisplay = document.getElementById("username-display");
-const userName = localStorage.getItem("blissboardUserName");
+//username display
 
-if (userDisplay && userName) {
-  userDisplay.textContent = `👋 Welcome, ${userName}`;
-}
+  function logout() {
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("blissboardUserEmail");
+    localStorage.removeItem("blissboardPassword");
+    window.location.href = "login.html";
+  }
+
+

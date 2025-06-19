@@ -25,17 +25,18 @@
           </ul>
         </div>
         <div class="nav-actions">
-          <span class="login-icon">
-            <i
-              class="fa-duotone fa-solid fa-arrow-right-to-bracket default-icon"
-            ></i>
-            <i class="fa-solid fa-door-open hover-icon"></i>
-          </span>
+          <div class="nav-actions">
+                   <div class="user-greeting">
+  <span id="userEmail-display"></span>
+</div>
+<div class="user-menu">
+  <span class="profile-info">
+    <i class="fa-solid fa-user-circle"></i>
+    <span id="userEmail-display"></span>
+  </span>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
 
-          <span class="toggle">
-            <i id="toggle-icon" class="fa-solid fa-toggle-off"></i>
-            <i class="fa-solid fa-toggle-on"></i>
-          </span>
         </div>
         <!-- Hamburger for mobile -->
         <div class="hamburger" aria-label="Toggle Menu">&#9776;</div>
@@ -50,7 +51,7 @@
     <!-- Profile Header -->
     <div class="profile-header">
       <img src="/asssets/avtar.jpg" alt="User Avatar" class="profile-avatar" />
-      <h2 class="profile-name">Welcome, <span id="user-name">Shruti</span></h2>
+      <h2 class="profile-name">Welcome, <span id="userEmail">Shruti</span></h2>
       <button class="edit-profile-btn">✏️ Edit Profile</button>
     </div>
 
@@ -76,6 +77,6 @@
 
   </div>
 </section>
-
+<script src="auth.js"></script>
 </body>
 </html>

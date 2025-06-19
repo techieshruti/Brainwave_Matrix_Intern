@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const protectedPages = ["index.html", "planner.html", "profile.html", "journal.html"];
   const isLoggedIn = localStorage.getItem("isLoggedIn");
   const mainContent = document.getElementById("main-content");
-  const usernameDisplay = document.getElementById("username-display");
+  const userEmailDisplay = document.getElementById("userEmail-display");
 
   // 🔐 Protect Pages
   if (protectedPages.includes(currentPage)) {
@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = "index.html";
   }
 
-  // ✨ Show username in navbar
-  const userName = localStorage.getItem("blissboardUserName");
-  if (usernameDisplay && userName) {
-    usernameDisplay.textContent = `👋 Welcome, ${userName}`;
+  // ✨ Show userEmail in navbar
+  const userEmail = localStorage.getItem("blissboarduserEmail");
+  if (userEmailDisplay && userEmail) {
+    userEmailDisplay.textContent = `👋 Welcome, ${userEmail}`;
   }
 
   // 🔄 Toggle Login/Signup (only if auth form exists)
@@ -53,13 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const name = document.getElementById("auth-username").value.trim();
+      const name = document.getElementById("auth-userEmail").value.trim();
       const pass = document.getElementById("auth-password").value.trim();
 
       if (!name || !pass) return alert("Please fill out all fields.");
 
       if (isLogin) {
-        const storedName = localStorage.getItem("blissboardUserName");
+        const storedName = localStorage.getItem("blissboarduserEmail");
         const storedPass = localStorage.getItem("blissboardPassword");
 
         if (name === storedName && pass === storedPass) {
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
           alert("Incorrect name or password.");
         }
       } else {
-        localStorage.setItem("blissboardUserName", name);
+        localStorage.setItem("blissboarduserEmail", name);
         localStorage.setItem("blissboardPassword", pass);
         localStorage.setItem("isLoggedIn", "true");
         alert("Signup successful!");

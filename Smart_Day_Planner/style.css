@@ -756,25 +756,49 @@ li:hover .task-btn {
   font-weight: bold;
 }
 
-.user-greeting {
-  font-size: 1rem;
-  margin-left: 1rem;
-  color: #264653;
-  font-weight: 500;
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-left: 1.2rem;
 }
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #a0e7e5, #b4f8c8);
-  height: 100vh;
+.profile-info {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #264653;
+  font-size: 1rem;
 }
+
+.profile-info i {
+  font-size: 1.3rem;
+  color: #2a9d8f;
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #264653;
+}
+
+.logout-btn:hover {
+  background-color: #f2f2f2;
+  border-color: #2a9d8f;
+  color: #2a9d8f;
+}
+
+
 
 #auth-section {
   width: 100%;
+  background: linear-gradient(to bottom right, #a0e7e5, #b4f8c8);
   max-width: 400px;
 }
 
